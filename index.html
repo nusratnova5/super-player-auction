@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div>
-                <div class="bg-black">
+                <div class="bg-black text-white">
                     <h1 class="text-center">Selected-V</h1>
                     <ol id="selected-players" class="list-decimal px-6">
 
@@ -88,50 +88,54 @@
                 </div>
                 <div class="bg-black mt-5">
                     <div class="text-center">
-                        <h1 class="text-white text-2xl">Budget</h1>
-                        <div class="flex">
+                        <h1 class="text-white text-2xl mb-3">Budget</h1>
+                        <div class="flex gap-4">
                             <div>
                                 <h1 class="text-white">Per Player </h1>
                             </div>
                             <div>
-                                <input type="text" class="w-40 h-12 bg-black border-2 border-white text-white  text-xl">
+                                <input type="text" class="w-24 h-8 bg-black border-2 border-white text-white  text-xl "
+                                    id="per-player-cost">
                             </div>
                         </div>
-                        <button class="bg-blue-700 px-10 m-5 text-xl font-medium">Calculate</button>
+                        <button class="bg-blue-700 px-10 m-5 text-xl font-medium" id="calculate-btn">Calculate</button>
                     </div>
                     <div>
-                        <div class="flex gap-3 text-white">
+                        <div class="flex gap-5 mb-5 text-white">
                             <div>
                                 <h1>Player expenses </h1>
                             </div>
                             <div>
-                                <h1>$00</h1>
+                                <h1 id="player-cost">$00</h1>
                             </div>
                         </div>
                     </div>
-                    <div class="flex text-white">
+                    <div class="flex gap-5 mb-5 text-white ">
                         <div>
                             <h1 class="text-white">Manager </h1>
                         </div>
                         <div>
-                            <input type="text" class="w-40 h-12 bg-black border-2 border-white text-white  text-xl">
+                            <input type="text" class="w-24 h-8 bg-black border-2 border-white text-white  text-xl "
+                                id="manager-cost">
                         </div>
                     </div>
-                    <div class="flex text-white">
+                    <div class="flex gap-5 mb-5 text-white">
                         <div>
                             <h1 class="text-white">Coach </h1>
                         </div>
                         <div>
-                            <input type="text" class="w-40 h-12 bg-black border-2 border-white text-white  text-xl">
+                            <input type="text" class="w-24 h-8 bg-black border-2 border-white text-white  text-xl "
+                                id="coach-cost">
                         </div>
                     </div>
-                    <button class="bg-blue-700 px-10 m-5 text-xl font-medium">Calculate</button>
-                    <div class="flex gap-3 text-white">
+                    <button class="bg-blue-700 px-10 m-5 text-xl font-medium"
+                        id="calculate-total-btn">Calculate</button>
+                    <div class="flex gap-10 text-white">
                         <div>
                             <h1>Total </h1>
                         </div>
                         <div>
-                            <h1>$00</h1>
+                            <h1 id="total-cost">$00</h1>
                         </div>
                     </div>
                 </div>
@@ -141,8 +145,10 @@
         </div>
 
     </body>
-    <script src="dom-handling.js"></script>
+    <script src="domHandling.js"></script>
     <script src="selected-player.js"></script>
+    <script src="playerCost.js"></script>
+    <script src="totalCost.js"></script>
 </body>
 
 </html>

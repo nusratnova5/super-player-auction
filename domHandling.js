@@ -20,3 +20,23 @@ function showPlayer(btnId, playerName) {
         button.style.backgroundColor = 'gray';
     })
 }
+
+function getInputValue(elementId) {
+    const element = document.getElementById(elementId);
+
+
+    const elementValueString = element.value;
+    const elementValue = parseFloat(elementValueString);
+    return elementValue;
+
+}
+
+function getTextValue(elementId) {
+    const element = document.getElementById(elementId);
+
+
+    const elementValueString = element.innerText;
+    const elementValue = parseFloat(elementValueString);
+    return elementValue;
+
+}
