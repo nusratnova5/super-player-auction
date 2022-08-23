@@ -9,16 +9,13 @@
     <title>Player Auction website</title>
 </head>
 
-<body>
+<body class="bg-gray-800">
     <header class="bg-auto bg-black">
-        <h1 class="text-center text-5xl text-blue-500 mb-10">Welcome to player Auction</h1>
-        <p class="text-blue-500 text-center text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-            ratione odit,
-            necessitatibus expedita,
-            aspernatur, architecto sequi totam est asperiores aliquid reprehenderit assumenda facilis neque error? Nam
-            omnis est facere et?
-
+        <h1 class="text-center text-5xl text-white mb-10">Super Player Auction</h1>
+        <p class="text-white text-center text-2xl ">
+            Welcome to player auction. Select your favorite one and enjoy the game.
         </p>
+        <br><br>
     </header>
 
     <body class="w-3/4 mx-auto">
@@ -81,7 +78,7 @@
                     </ol>
                 </div>
                 <div class="bg-black mt-5">
-                    <div class="text-center">
+                    <div class="text-center mx-1">
                         <h1 class="text-white text-2xl mb-3">Budget</h1>
                         <div class="flex gap-4">
                             <div>
@@ -95,16 +92,16 @@
                         <button class="bg-blue-700 px-10 m-5 text-xl font-medium" id="calculate-btn">Calculate</button>
                     </div>
                     <div>
-                        <div class="flex gap-5 mb-5 text-white">
+                        <div class="flex gap-5 mb-5 mx-1 text-white">
                             <div>
                                 <h1>Player expenses </h1>
                             </div>
                             <div>
-                                <h1 id="player-cost">$00</h1>
+                                <h1 id="player-cost">$<span>00</span></h1>
                             </div>
                         </div>
                     </div>
-                    <div class="flex gap-5 mb-5 text-white ">
+                    <div class="flex gap-5 mb-5 mx-1 text-white ">
                         <div>
                             <h1 class="text-white">Manager </h1>
                         </div>
@@ -113,7 +110,7 @@
                                 id="manager-cost">
                         </div>
                     </div>
-                    <div class="flex gap-5 mb-5 text-white">
+                    <div class="flex gap-5 mb-5 mx-1 text-white">
                         <div>
                             <h1 class="text-white">Coach </h1>
                         </div>
@@ -124,12 +121,12 @@
                     </div>
                     <button class="bg-blue-700 px-10 m-5 text-xl font-medium"
                         id="calculate-total-btn">Calculate</button>
-                    <div class="flex gap-10 text-white">
+                    <div class="flex gap-10 mx-1 text-white">
                         <div>
                             <h1>Total </h1>
                         </div>
                         <div>
-                            <h1 id="total-cost">$00</h1>
+                            <h1 id="total-cost">$<span>00</span></h1>
                         </div>
                     </div>
                 </div>
@@ -139,6 +136,9 @@
         </div>
 
     </body>
+    <footer>
+        <h3 class="text-center py-8">Copyright @ 2022 All Rights Reserved.</h3>
+    </footer>
     <script src="domHandling.js"></script>
     <script src="selected-player.js"></script>
     <script src="playerCost.js"></script>
