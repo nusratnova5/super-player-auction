@@ -6,7 +6,7 @@ function showPlayer(btnId, playerName) {
 
         const childNumber = ol.childElementCount;
         if (childNumber > 4) {
-            alert('No');
+            alert('You have already selected five players.');
             return;
         }
 
